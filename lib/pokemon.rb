@@ -1,7 +1,9 @@
 class Pokemon
-  attr_accessor :save_pokemon, :add_pokemon, :remove_pokemon
+  attr_accessor :id, :name, :type, :hp, :db 
   
-  def initialize(pk_name)
-    
+  def initialize(id:, name:, type:, hp:, db:)
+    @id, @name, @type, @hp, @db = id, name, type, hp, db 
   end
+  
+  
 end
